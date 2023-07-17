@@ -52,7 +52,7 @@ function shuffle(array) {
 }
 
 /*
-Start Game: Shuffle the deck, create <li> tags and <img> 
+TODO: Start Game: Shuffle the deck, create <li> tags and <img> 
 tags and append to the deck <ul> with the new shuffled content
 */
 function startGame() {
@@ -69,9 +69,9 @@ function startGame() {
 		// Append <img> to <li>
 		liTag.appendChild(addImage);
 		// Set the img src path with the shuffled deck
-		addImage.setAttribute("src", "https://github.com/BalKhabra/memory-game/tree/main/assets/img/" + shuffledDeck[i] + "?raw=true");
+		addImage.setAttribute("src", "assets/img/" + shuffledDeck[i]);
 		// Add an alt tag to the image
-		addImage.setAttribute("alt", "image of vault boy from fallout");
+		addImage.setAttribute("alt", "image of ben10");
 		// Update the new <li> to the deck <ul>
 		deck.appendChild(liTag);
 	}
@@ -80,7 +80,7 @@ function startGame() {
 startGame();
 
 /*
-Remove all child nodes from the deck <li> tags and
+TODO: Remove all child nodes from the deck <li> tags and
 <img> tags.  To be called in set everything function only
 */
 function removeCard() {
@@ -91,7 +91,7 @@ function removeCard() {
 }
 
 /*
-Update the timer in the HTML for minutes and seconds
+TODO: Update the timer in the HTML for minutes and seconds
 This timer() function is invoked in the event listener
 on the first card click
 Used: https://www.w3schools.com/js/js_timing.asp
@@ -110,7 +110,7 @@ function timer() {
 }
 
 /*
-Stop the timer once the user has matched
+TODO: Stop the timer once the user has matched
 all 16 cards, total of 8 pairs
 Used: https://www.w3schools.com/js/js_timing.asp
 */
@@ -119,7 +119,7 @@ function stopTime() {
 }
 
 /*
-Reset all global variables and the content of HTML elements
+TODO: Reset all global variables and the content of HTML elements
 timer, stars, moves, and the moves and timer inner HTML
 */
 function resetEverything() {
@@ -146,7 +146,7 @@ function resetEverything() {
 }
 
 /*
-Increment the moves counter.  To be called at each
+TODO: Increment the moves counter.  To be called at each
 comparison for every two cards compared add one to the count
 */
 function movesCounter() {
@@ -157,7 +157,7 @@ function movesCounter() {
 }
 
 /*
-Update the star rating.  Depending on the number of
+TODO: Update the star rating.  Depending on the number of
 moves the user completes the game, the stars will decrease
 with the more moves the user takes.
 */
@@ -174,14 +174,14 @@ function starRating() {
 }
 
 /*
-Compare two cards to see if they match or not
+TODO: Compare two cards to see if they match or not
 */
 function compareTwo() {
 	// When there are 2 cards in the opened array
 	if (opened.length === 2) {
   		// Disable any further mouse clicks on other cards
   		document.body.style.pointerEvents = "none";
-  }
+  	}
 	// Compare the two images src
 	if (opened.length === 2 && opened[0].src === opened[1].src) {
 		// If matched call match()
@@ -195,7 +195,7 @@ function compareTwo() {
 }
 
 /*
-If the two cards match, keep the cards open and
+TODO: If the two cards match, keep the cards open and
 apply class of match
 */ 
 function match() {
@@ -220,7 +220,7 @@ function match() {
 }
 
 /*
-If the two cards do not match, remove the cards
+TODO: If the two cards do not match, remove the cards
 from the opened array and flip the cards back over by
 removing the flip class.
 */
@@ -242,7 +242,7 @@ function noMatch() {
 }
 
 /*
-Get stats on the time, how many moves, and star rating
+TODO: Get stats on the time, how many moves, and star rating
 for the end game and update the modal with these stats
 */
 function AddStats() {
@@ -266,7 +266,7 @@ function AddStats() {
 }
 
 /*
-Display the modal on winning the game
+TODO: Display the modal on winning the game
 Help with the modal from:
 https://www.w3schools.com/howto/howto_css_modals.asp
 */
@@ -289,7 +289,7 @@ const modalClose = document.getElementsByClassName("close")[0];
 }
 
 /*
-Check the length of the matched array and if there
+TODO: Check the length of the matched array and if there
 are 8 pairs 16 cards all together then the game is won.
 Stop the timer update the modal with stats and show the modal
 */
@@ -305,7 +305,7 @@ function winGame() {
 Main Event Listener
 ------------------------------------*/
 /*
-Event Listener if a card <li> is clicked
+TODO: Event Listener if a card <li> is clicked
 call flipCard()
 */
 deck.addEventListener("click", function(evt) {
@@ -313,7 +313,7 @@ deck.addEventListener("click", function(evt) {
 		// To console if I was clicking the correct element 
 		console.log(evt.target.nodeName + " Was clicked");
 		// Start the timer after the first click of one card
-	// Executes the timer() function
+		// Executes the timer() function
 		if (timeStart === false) {
 			timeStart = true; 
 			timer();
@@ -322,15 +322,15 @@ deck.addEventListener("click", function(evt) {
 		flipCard();
 	}
 
-	//Flip the card and display cards img
+	//TODO: Flip the card and display cards img
 	function flipCard() {
-		// When <li> is clicked add the class .flip to show img
-		evt.target.classList.add("flip");
+      	// When <li> is clicked add the class .flip to show img
+		evt.target.classList.add("flip");	
 		// Call addToOpened() function
 		addToOpened();
 	}
 	 
-	//Add the fliped cards to the empty array of opened
+	//TODO: Add the fliped cards to the empty array of opened
 	function addToOpened() {
 		/* If the opened array has zero or one other img push another 
 		img into the array so we can compare these two to be matched
@@ -348,16 +348,21 @@ deck.addEventListener("click", function(evt) {
 Restart Buttons
 ------------------------------------*/
 /*
-Event Listener to listen for a click on the reset
+TODO: Event Listener to listen for a click on the reset
 button, once clicked call resetEverything()
 */
 reset.addEventListener('click', resetEverything);
 
 /*
-Event Listener to listen for a click on the play
+TODO: Event Listener to listen for a click on the play
 again button, once clicked call resetEverything()
 */
 playAgain.addEventListener('click',function() {
 	modal.style.display = "none";
 	resetEverything();
 });
+
+// Debugging console.logs
+// console.log(matched.length);
+// console.log(opened);
+// console.log(opened.length);
