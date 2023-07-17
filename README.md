@@ -2,9 +2,9 @@
 
 Project 3 
 
-## Licensing For Fallout Images
+## Licensing For Ben10 Images
 
-All Images are taken from [GamePedia Wiki Pages](http://ben10.wikia.com/wiki/Category:ben_ten_images) for Ben10.  The images original source are created and owned by Bethesda Softworks.  The use of these images is believed to qualify as fair use for the purpose of creative work only.
+All Images are taken from [GamePedia Wiki Pages](https://ben10.fandom.com/wiki/Ben_10_Planet) for Ben10.  The images original source are created and owned by Bethesda Softworks.  The use of these images is believed to qualify as fair use for the purpose of creative work only.
 
 ### Screenshots of Working Game
 

@@ -19,7 +19,7 @@ html {
 
 body {
 	/* Background pattern from Subtle Patterns */
-	background: url('../img/ignasi_pattern_s.png');
+	background: url('https://github.com/FoxyStoat/memory-game/blob/master/assets/img/ignasi_pattern_s.png?raw=true');
 	font-family: "Open Sans", sans-serif;
 	/*one Em roughly ten pixels (16 x 62.5% = 10)*/
 	font-size: 62.5%;
@@ -33,7 +33,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 4em;
+	margin-top: 0.5em;
 }
 
 ul > li {
@@ -50,8 +50,7 @@ ul > li {
 	border: none;
 	color: #fff;
 	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-	margin-top: 1em;
-	padding: 1em;
+	padding: 0.8em;
 }
 
 /*----------------------------------  
@@ -59,14 +58,18 @@ Header
 ------------------------------------*/
 
 h1 {
-	font-size: 5em;
+	font-size: 3em;
 	font-weight: 400;
+  color: #1dff49;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: 600;
-	padding-bottom: 0.5em;
+  margin-top: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p {
@@ -82,7 +85,7 @@ Section - Score Panel
 ------------------------------------*/
 
 .score-panel {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	padding: 1em 0 2em;
 }
 
@@ -103,7 +106,7 @@ Section - Score Panel
 	background: #fff;
 	border-radius: 0.5em;
 	color: #000;
-	margin: 1em;
+	margin: 0.5em;
 	padding: 0.5em;
 }
 
@@ -144,8 +147,8 @@ https://www.w3schools.com/howto/howto_css_modals.asp
 	background-color: #fff;
 	/* 5% from the top and centered */
 	margin: 5% auto;
-	padding: 2em;
 	border: 0.8em solid #fc4;
+	padding-right: 2em;
 	width: 80%;
 }
 
@@ -188,7 +191,7 @@ Deck of Cards
 ------------------------------------*/
 /*Mobile first responsivness*/
 .deck {
-	background: linear-gradient(to bottom, #5cf, #28e);
+	background: linear-gradient(to bottom, #e164cc, #db48c3);
 	border-radius: 1.5em;
 	display: flex;
 	flex-wrap: wrap;
@@ -206,7 +209,7 @@ Deck of Cards
 }
 
 .card {
-	background: #fc4;
+	background: #1dff49;
 	border-radius: 0.5em;
 	height: 7em;
 	width: 7em;
