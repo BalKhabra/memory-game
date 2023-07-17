@@ -60,7 +60,6 @@ Header
 h1 {
 	font-size: 3em;
 	font-weight: 400;
-  color: #1dff49;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
@@ -80,13 +79,20 @@ h3 {
 	font-weight: 400;
 }
 
+.title-img {
+	display: inline-block;
+	margin: 0 0 1em;
+	width: 30em;
+}
+
+
 /*----------------------------------  
 Section - Score Panel
 ------------------------------------*/
 
 .score-panel {
 	font-size: 1.4em;
-	padding: 1em 0 2em;
+	padding: 1em 0 1em;
 }
 
 .star-rating > li {
