@@ -1,5 +1,5 @@
 // Array of Deck of Card Images
-const deckCards = ["Agility.png", "Agility.png", "Armour.png", "Armour.png", "Kevin.png", "Kevin.png", "Hack.png", "Hack.png", "Logow.png", "Logow.png", "Planet.png", "Planet.png", "Robotics.png", "Robotics.png", "Shock.png", "Shock.png"];
+const deckCards = ["Agility.png", "Agility.png", "Ben.png", "Ben.png", "Kevin.png", "Kevin.png", "Gwen.png", "Gwen.png", "Logo-w.png", "Logo-w.png", "Logo-g.png", "Logo-g.png", "Planet.png", "Planet.png", "Robotics.png", "Robotics.png"];
 
 // Global Arrays
 // Access the <ul> with class of .deck
