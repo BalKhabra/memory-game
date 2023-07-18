@@ -2,15 +2,9 @@
 
 Project 3 
 
-## Licensing For Ben10 Images
+## Licensing For Rick & Morty Images
 
-All Images are taken from [GamePedia Wiki Pages](https://ben10.fandom.com/wiki/Ben_10_Planet) for Ben10.  The images original source are created and owned by Bethesda Softworks.  The use of these images is believed to qualify as fair use for the purpose of creative work only.
-
-### Screenshots of Working Game
-
-![Screenshot of working game in action](screenshot-memory-game.png "Screenshot of working game in action")
-
-![Screenshot of modal popup](screenshot-memory-game-modal.png "Screenshot of working game in action")
+All Images are taken from google images for Rick & Morty. The use of these images is believed to qualify as fair use for the purpose of creative work only.
 
 #### Link to game
 
